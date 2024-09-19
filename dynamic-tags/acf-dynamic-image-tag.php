@@ -139,10 +139,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		}
 
         return $data_image;
-        // return [
-        //     'id' => $data_image['id'],
-        //     'url' => 'https://cowardly-wilderness.localsite.io/wp-content/uploads/2024/09/12.png',
-        // ];
     }      
 
     private function get_acf_fields() {
@@ -152,7 +148,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             $group_fields = acf_get_fields($group);
             foreach ($group_fields as $field) {
                 if (in_array($field['type'], ['image'])) {
-                    do_action('php_console_log', var_dump(get_field($field['name'], get_queried_object_id())));
                     $fields[$field['name']] = esc_html__( $field['label'] , 'elementor-acf-dynamic-tags' );
                 }
             }
