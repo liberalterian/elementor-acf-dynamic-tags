@@ -31,7 +31,7 @@ function register_site_dynamic_tag_group( $dynamic_tags_manager ) {
 	$dynamic_tags_manager->register_group(
 		'site',
 		[
-			'title' => esc_html__( 'Site', 'elementor-acf-dynamic-tags' )
+			'title' => esc_html__( 'Site', 'eacfdt' )
 		]
 	);
 

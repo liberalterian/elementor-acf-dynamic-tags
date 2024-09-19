@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return esc_html__( 'ACF Text Area', 'elementor-acf-dynamic-tags' );
+		return esc_html__( 'ACF Text Area', 'eacfdt' );
 	}
 
 	/**
@@ -82,7 +82,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$this->add_control(
 			'acf_field',
 			[
-				'label' => esc_html__( 'Field', 'elementor-acf-dynamic-tags' ),
+				'label' => esc_html__( 'Field', 'eacfdt' ),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => $this->get_acf_fields(),
 			]
@@ -128,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             $group_fields = acf_get_fields($group);
             foreach ($group_fields as $field) {
                 if (in_array($field['type'], ['textarea'])) {
-                    $fields[$field['key']] = esc_html__( $field['label'] , 'elementor-acf-dynamic-tags' );
+                    $fields[$field['key']] = esc_html__( $field['label'] , 'eacfdt' );
                 }
             }
         }
