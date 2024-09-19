@@ -47,11 +47,23 @@ add_action( 'elementor/dynamic_tags/register', 'register_site_dynamic_tag_group'
  * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_acf_dynamic_text_tag( $dynamic_tags_manager ) {
+function register_acf_dynamic_tags( $dynamic_tags_manager ) {
 
 	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-text-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-textarea-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-number-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-url-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-email-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-wysiwyg-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/acf-dynamic-image-tag.php' );
 
 	$dynamic_tags_manager->register( new \ACF_Dynamic_Text_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_Text_Area_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_Number_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_URL_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_Email_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_WYSIWYG_Tag );
+	$dynamic_tags_manager->register( new \ACF_Dynamic_Image_Tag );
 
 }
-add_action( 'elementor/dynamic_tags/register', 'register_acf_dynamic_text_tag' );
+add_action( 'elementor/dynamic_tags/register', 'register_acf_dynamic_tags' );
