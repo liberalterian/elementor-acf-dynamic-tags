@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 * @return array Dynamic tag groups.
 	 */
 	public function get_group() {
-		return [ 'site' ];
+		return [ 'acf-fields' ];
 	}
 
 	/**
@@ -87,7 +87,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                 'options' => $this->get_acf_fields(),
 			]
 		);
-		// do_action('php_console_log', var_dump($this->get_acf_fields()));
 	}
 
 	/**
