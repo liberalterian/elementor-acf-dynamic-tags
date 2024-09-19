@@ -12,13 +12,13 @@ Tested up to: 6.1
 Stable tag: 1.0.0
 Requires PHP: 7.2
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
 Seamlessly integrate Advanced Custom Fields with Elementor using dynamic tags.
 
 == Description ==
 
-Enhanced ACF Dynamic Tags for Elementor bridges the gap between Advanced Custom Fields (ACF) and Elementor Page Builder. This powerful plugin allows you to use your ACF field data as dynamic content within Elementor, providing unprecedented flexibility in your WordPress website designs.
+Elementor ACF Dynamic Tags bridges the gap between Advanced Custom Fields (ACF) and Elementor Page Builder. This powerful plugin allows you to use your ACF field data as dynamic content within Elementor, providing unprecedented flexibility in your WordPress website designs.
 
 = Features =
 
