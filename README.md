@@ -1,18 +1,11 @@
-Certainly! I'll rewrite the README.md file to fit the format typically used for WordPress plugin repositories. This format is optimized for display on the WordPress.org plugin page and includes specific sections that WordPress looks for when presenting plugin information.
-
-
-
-
-
-=== Enhanced ACF Dynamic Tags for Elementor ===
-Contributors: [your WordPress.org username]
+=== Elementor ACF Dynamic Tags ===
+Contributors: liberalterian
 Tags: elementor, acf, dynamic tags, custom fields
 Requires at least: 5.0
-Tested up to: 6.1
+Tested up to: 6.6.2
 Stable tag: 1.0.0
-Requires PHP: 7.2
+Requires PHP: 8.2
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
 Seamlessly integrate Advanced Custom Fields with Elementor using dynamic tags.
 
