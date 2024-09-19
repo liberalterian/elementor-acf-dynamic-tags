@@ -1,16 +1,17 @@
 <?php
 /**
- * Plugin Name: Elementor ACF Dynamic Tags
- * Description: Add dynamic tag that returns an ACF field.
+ * Plugin Name: EACF - Dynamic Tags
+ * Description: Adds dynamic tags that allow users to add ACF fields to Elementor templates.
  * Plugin URI:  https://joshuahealey.com/elementor-acf-dynamic-tags
  * Version:     1.0.0
  * Author:      Joshua Healey (@liberalterian)
  * Author URI:  https://joshuahealey.com/
  * Text Domain: elementor-acf-dynamic-tags
  *
- * Requires Plugins: elementor
+ * Requires Plugins: elementor, advanced custom fields
  * Elementor tested up to: 3.24.0
  * Elementor Pro tested up to: 3.24.0
+ * Advanced Custom Fields test up to: 6.3.6
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
